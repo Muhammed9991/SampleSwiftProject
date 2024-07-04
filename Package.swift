@@ -10,6 +10,10 @@ let package = Package(
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(name: "Sample", targets: ["Sample"]),
     .library(name: "HelloWorld", targets: ["HelloWorld"]),
+    .library(name: "Models", targets: ["Models"]),
+  ],
+  dependencies: [
+    .package(url: "https://github.com/krzysztofzablocki/Sourcery.git", from: "2.2.5"),
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -18,5 +22,7 @@ let package = Package(
     .testTarget(name: "SampleTests", dependencies: ["Sample"]),
 
     .target(name: "HelloWorld"),
+    .target(
+      name: "Models"),
   ]
 )
