@@ -1,0 +1,8 @@
+sources:
+  - Sources/Models/
+
+templates:
+  - Sources/SourceryTemplates/
+
+output:
+  Sources/Models/Mocks/
