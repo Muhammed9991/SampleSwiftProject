@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096384F92C369939009814F6 /* HelloWorld in Frameworks */ = {isa = PBXBuildFile; productRef = 096384F82C369939009814F6 /* HelloWorld */; };
 		09FF2A492C3694080047D325 /* SampleProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FF2A482C3694080047D325 /* SampleProjectApp.swift */; };
 		09FF2A4B2C3694080047D325 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FF2A4A2C3694080047D325 /* ContentView.swift */; };
 		09FF2A4D2C36940A0047D325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FF2A4C2C36940A0047D325 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		09FF2A4A2C3694080047D325 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09FF2A4C2C36940A0047D325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09FF2A4F2C36940A0047D325 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09FF2A562C36958B0047D325 /* Sample */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Sample; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +28,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096384F92C369939009814F6 /* HelloWorld in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096384F72C369939009814F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09FF2A3C2C3694080047D325 = {
 			isa = PBXGroup;
 			children = (
+				09FF2A562C36958B0047D325 /* Sample */,
 				09FF2A472C3694080047D325 /* SampleProject */,
 				09FF2A462C3694080047D325 /* Products */,
+				096384F72C369939009814F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = SampleProject;
+			packageProductDependencies = (
+				096384F82C369939009814F6 /* HelloWorld */,
+			);
 			productName = SampleProject;
 			productReference = 09FF2A452C3694080047D325 /* SampleProject.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +359,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		096384F82C369939009814F6 /* HelloWorld */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HelloWorld;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09FF2A3D2C3694080047D325 /* Project object */;
 }
